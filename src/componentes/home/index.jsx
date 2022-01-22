@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
-import { getRecetas, getDietas, filtrar_por_tipo_de_dieta, ordenar_por_nombre, ordenar_por_puntuacion, ordenar_por_puntuacion_dieta } from "../../actions/index";
+import { getRecetas, getDietas, filtrar_por_tipo_de_dieta, ordenar_por_nombre, ordenar_por_puntuacion_dieta } from "../../actions/index";
 import Card from "../Card";
 import NavBar from "../NavBar";
 import styles from '../home/home.module.css';
