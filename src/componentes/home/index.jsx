@@ -125,7 +125,9 @@ export default function Home() {
                 {<NavBar setPage={setCurrentPage} />}
             </div>
 
-            {  <div className={styles.pokemons_box}>
+            {  
+                recetasActuales.length > 0 ?
+            <div className={styles.pokemons_box}>
                 {recetasActuales?.map(el => {
                     return (
                         <div key={el.id}>
@@ -138,6 +140,8 @@ export default function Home() {
                 }
 
                  </div>
+                 : 
+                  <img src="https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif" alt="https://miro.medium.com/max/1400/1*CsJ05WEGfunYMLGfsT2sXA.gif" />
             }
             <div className={styles.btns_box}>
                 <button onClick={paginaAnterior}>Pagina Anterior</button>
