@@ -11,7 +11,27 @@
     transition-duration: 0.4s;
   
 }
+.info::-webkit-scrollbar {
+    -webkit-appearance: none;
+	background-color: none;
+}
+.info::-webkit-scrollbar:vertical {
+    width:2px;
+}
+.info::-webkit-scrollbar-button:increment,.info::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.info::-webkit-scrollbar-thumb {
+    background-color: rgba(221, 207, 220, 0.37);
+    border-radius: 20px;
+    border: 0.5px solid #000000b2;
+}
+.info::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
 .info{
+    overflow-y:hidden;
     overflow: scroll;
     position: absolute;
   width: 40%;
