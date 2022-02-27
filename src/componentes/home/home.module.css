@@ -1,15 +1,30 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	
+}
 .home_box{
-    min-height: 100%;
-    max-width: 100%;
+    
+    overflow-x:hidden;
     display: flex;
     flex-direction: column;
-    
-    /* background-color: rgb(60, 102, 69); */
-    background-image: url("https://i.blogs.es/df050b/istock-1258149399/1366_2000.jpg"); 
+    background-color: rgb(60, 102, 69);
+    background-image: url(https://i.blogs.es/df050b/istock-1258149399/1366_2000.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    min-height: -webkit-fill-available;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
 
+}
+.pokemons_card_cointaner{
+    box-shadow: none;
 }
 .btns_box{
     
@@ -59,5 +74,59 @@
 
 
 
+@media only screen and (max-width: 1550px) and (min-width: 1100px) {
+    .pokemons_box{
+     
+        grid-template-columns: auto auto;
+       
+        
+    }
+}
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+    .pokemons_box{
+        grid-template-columns:  auto;
+    }
+    .btns_box{
+        height:auto;
+       
+    }
+}
+@media only screen and (max-width: 900px) and (min-width: 500px) {
+    .pokemons_box{
+     
+        grid-template-columns:  auto;
+       
+        
+    }
+    .btns_box{
+        height: 100%;
+        width: 95%;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+    .pokemons_box{
+     
+        grid-template-columns:  auto;
+       
+        
+    }
+    .btns_box{
+        height: 100%;
+        width: 95%;
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+}
 
 

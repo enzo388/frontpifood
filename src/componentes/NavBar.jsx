@@ -22,8 +22,14 @@ export default function NavBar({setPage}){
         setPage(1);
     }
 
-    return <form onSubmit={handleOnSubmit}>
-        <input type="text" placeholder="Buscar Receta..." value={input} onChange={handleOnChange} />
-        <button type='submit'>Buscar</button>
-    </form>
+    return (
+        <div>
+           
+            <input className="pepito" type="text" placeholder="Buscar Receta..." value={input} onChange={handleOnChange} />
+            <button type='submit' onSubmit={handleOnSubmit} >Buscar</button>
+   
+    </div>
+    )
+    
+ 
 }

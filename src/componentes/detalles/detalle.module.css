@@ -6,21 +6,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    min-height: -webkit-fill-available;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
 }
-.infoContenedor{
+.infoContenedor1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(9, 18, 20, 0.404);
+
     color: rgb(255, 255, 255);
     width: 80%;
-    padding: 76px;
+    
     margin-top: 64px;
     list-style: disclosure-closed;
     border-radius: 8px;
+}
+.infoContenedor{
+    align-items: center;
+    background-color: rgba(9, 18, 20, 0.753);
+    color: rgb(255, 255, 255);
+    width: 80%;
+    display: flex;
+    margin: 10%;
+    padding: 2%;
+    border-radius: 8px;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgb(255, 255, 255)
 }
 
 .resumen{
@@ -55,5 +68,9 @@
     width:240px;
     height:200px;
     border-radius: 8px;
+
+}
+
+@media only screen and (max-width: 750px) and (min-width: 250px) {
 
 }

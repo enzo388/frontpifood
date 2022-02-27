@@ -46,6 +46,7 @@ export default function Detail() {
     return (
         <div className={styles.contenedor}>
             <div className={styles.infoContenedor}>
+                <div className={styles.infoContenedor1}>
                 <button className={styles.btn} onClick={handle_button_home}>Atras</button>
                 {
                     Object.keys(detail).length > 0 ?
@@ -70,6 +71,8 @@ export default function Detail() {
                 }
 
             </div>
+                </div>
+               
 
         </div>
     )

@@ -17,20 +17,19 @@ export default function Card({ nombre, imagen, dieta, id, puntuacion, }) {
         <div className={styles.card}>
 
             <div  className={styles.posicionInfo}>
-                <div>
+                
                     <img className={styles.img} src={imagen} alt={"No Se encontro la imagen"} />
-                </div>
+                    <button  className={styles.btn}  onClick={handle_click}>Ver Más</button>
                 <div className={styles.info}>
                 
-                    <div>
+                   
                         <h3>{nombre}</h3>
-                    </div>
+                   
 
-                    <div>
+                    
                         <h5>Puntuacion Del Plato: {puntuacion}</h5>
-                    </div>
-
-                    <div>
+                   
+                    
 
                         <h5 >Tipos de dietas:
                     {
@@ -39,9 +38,8 @@ export default function Card({ nombre, imagen, dieta, id, puntuacion, }) {
                         </h5> 
 
 
-                    </div>
+                  
                     
-                    <button  className={styles.btn}  onClick={handle_click}>Ver Más</button>
                 </div>
          
             </div>

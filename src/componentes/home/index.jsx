@@ -130,11 +130,11 @@ export default function Home() {
             <div className={styles.pokemons_box}>
                 {recetasActuales?.map(el => {
                     return (
-                        <div key={el.id}>
+                     
 
                             <Card key={"222"} nombre={el.nombre} imagen={el.imagen} id={el.id} dieta={el.dieta} puntuacion={el.puntuacion} />
 
-                        </div>
+                        
                     )
                 })
                 }
